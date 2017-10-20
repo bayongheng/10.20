@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	     <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	     <meta name="format-detection" content="telephone=no,email=no,adress=no">
+	     <script src="js/swiper-3.3.1.min.js"></script> 
+	     <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	     <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="icon/iconfont.css">
+	     <script src="js/zepto.min.js"></script>
+	    <script>    
+	      (function(doc,win){
+	        doc.documentElement.style.fontSize = doc.documentElement.clientWidth/375*50+"px";
+	      })(document,window)	   	
+	    </script>
+</head>
+<body ng-app="app">
+<div class="box">
+  	<header>
+  		<div class="head">
+  			<span><a href="#/index">服务</a></span>
+  			<span><a href="#/tab">金融</a></span>
+  		</div>
+  	</header>
+   <ui-view></ui-view>
+</div>
+   
+   
+<script src="js/main.js"></script>
+ <script src="angular/angular.min.js"></script>
+ <script src="angular/angular-ui-router.min.js"></script>
+ <script src="App/app.js"></script>
+ <script src="./App/Directive/contentDirective.js"></script>
+ <script src="./App/Directive/tabDirective.js"></script>
+  <script src="./App/Directive/listDirective.js"></script>
+<script src="./App/Controller/contentController.js"></script>
+ <script src="./App/Server/server.js"></script>
+</body>
+</html>
